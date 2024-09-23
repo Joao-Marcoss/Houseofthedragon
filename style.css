@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+section {
+  padding: 50px 10%;
+}
+img {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(0, 0, 0);
+  box-shadow: 0 4px 41px;
+  padding: 20px 10%;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  position: relative;
+  font-size: 1rem;
+  padding: 11px 20px;
+  color: #9c3d11;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: #9c3d11;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+}
+.home {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background: #c9c9c9;
+  gap: 1rem;
+  background-image: url(./images/heir.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-img {
+  flex: 1 1 17rem;
+}
+.home-text {
+  flex: 1 1;
+  text-align: center;
+}
+.home-text p {
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+.home-text span {
+  font-size: 30px;
+  color: rgba(184, 134, 11, 1);
+  font-weight: 600;
+  text-decoration: underline;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.sinopse h1 {
+  color: rgba(184, 134, 11, 1);
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.sinopse {
+  background-color: #080400;
+}
+.sinopse-context {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  align-items: center;
+}
+.sinopse-img {
+  flex: 1 1 21rem;
+}
+.sinopse-text {
+  flex: 1 1 21rem;
+}
+.sinopse-text h2 {
+  text-align: left;
+  color: white;
+}
+.sinopse-text p {
+  color: #ffffffb0;
+  font-size: 1rem;
+  margin-left: 40px;
+}
+
+.title-characters {
+  text-align: center;
+  margin-top: 30px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+.grid-container button {
+  background-color: rgba(184, 134, 11, 1);
+  color: rgba(20, 20, 20, 1);
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn-nd {
+  background-color: rgba(184, 134, 11, 1);
+  color: rgba(20, 20, 20, 1);
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.grid-item:hover {
+  transform: translateY(-10px);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+p {
+  font-size: 1em;
+  color: #555;
+}
+.hidden {
+  display: none;
+}
+/* melhores momentos */
+
+.episodes {
+  text-align: center;
+  padding: 50px 10%;
+  background-color: rgb(249, 249, 249);
+}
+
+.heading h1 {
+  color: #9c3d11;
+  font-size: 1.7rem;
+}
+.heading span {
+  color: rgba(184, 134, 11, 1);
+  font-size: 1.3rem;
+}
+.container-episodes {
+  display: flex;
+  justify-content: center;
+}
+
+/* footer */
+footer {
+  background-color: #080400;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.social-icons {
+  margin-bottom: 10px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: rgba(184, 134, 11, 1);
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #fff;
+}
+
+.row {
+  margin-top: 10px;
+}
+
+@media (max-width: 1200px) {
+  section {
+    padding: 50px 5%;
+  }
+  header {
+    padding: 20px 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 20px 2%;
+  }
+
+  .navbar a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+
+  .home-text {
+    text-align: center;
+  }
+
+  .home-text span {
+    font-size: 24px;
+  }
+
+  .home-text p {
+    font-size: 14px;
+  }
+
+  .sinopse-context {
+    flex-direction: column;
+  }
+
+  .sinopse-text p {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .home {
+    background-size: cover;
+  }
+
+  .home-text span {
+    font-size: 20px;
+  }
+
+  .home-text p {
+    font-size: 16px;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    padding: 10px;
+    text-align: center;
+  }
+}

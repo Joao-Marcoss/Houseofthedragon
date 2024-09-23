@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>House of the Dragon</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <a href="#" class="logo"
+        ><img src="./images/dragon-icon (1).png" alt="menu-icon"
+      /></a>
+      <div class="bx bx-menu" id="menu-icon"></div>
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sinopse">Sinopse</a></li>
+        <li><a href="#characters">Personagens</a></li>
+        <li><a href="#episodes">Melhores momentos </a></li>
+      </ul>
+    </header>
+    <!-- home -->
+    <section class="home" id="home">
+      <div class="home-text">
+        <span>House of the Dragon</span>
+        <p>
+          "A casa do Dragão" é uma série de televisão americana baseada no livro
+          "Fogo & Sangue" de George R. R. Martin. A série é um prequel de "Game
+          of Thrones" e se passa cerca de 200 anos antes dos eventos desta.
+          "House of the Dragon" foca na história da Casa Targaryen, a dinastia
+          de senhores dos dragões que governou Westeros antes da rebelião que
+          levou à queda de seu império.
+        </p>
+      </div>
+      <div class="home-img">
+        <img src="./" alt="" />
+      </div>
+    </section>
+
+    <!--Sinopse-->
+    <section class="sinopse" id="sinopse">
+      <h1>Sinopse</h1>
+      <div class="sinopse-context">
+        <div class="sinopse-image">
+          <img src="./images/sinopse.png" alt="A casa do Dragão" />
+        </div>
+        <div class="sinopse-text">
+          <h2>A serie conta atualmente com 2 temporadas</h2>
+          <p>
+            A trama de "House of the Dragon" gira em torno de um período
+            tumultuado na história dos Targaryen conhecido como a Dança dos
+            Dragões, uma guerra civil que eclodiu entre facções rivais dentro da
+            família real. O conflito surge após a morte do Rei Viserys I
+            Targaryen, que deixa um vácuo de poder e disputas sobre quem deve
+            herdar o Trono de Ferro. <br />
+            <br />
+          </p>
+          <p>
+            A série explora os temas de poder, traição, lealdade e ambição, bem
+            como as complexas dinâmicas familiares dentro da Casa Targaryen. A
+            luta pelo Trono de Ferro leva Westeros a uma era de caos e
+            destruição, onde dragões e homens se enfrentam em batalhas épicas.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Personagens -->
+
+    <h1 id="characters" class="title-characters">Personagens Principais</h1>
+
+    <section class="grid-container">
+      <!-- Viserys -->
+      <div class="grid-item" id="viserys-card">
+        <img src="./images/viserys.jpg" alt="Nome do Personagem 1" />
+        <h2>Viserys Targaryen</h2>
+        <p>
+          O quinto rei Targaryen a sentar no Trono de Ferro. Ele é um monarca
+          bondoso e gentil, mas sua incapacidade de resolver a sucessão ao trono
+          lança o reino no caos.
+        </p>
+        <button id="to-viserys-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="viserys-dragon-card">
+        <img src="./images/dragon/Balerion.png" alt="Dragão" />
+        <h2>Balerion</h2>
+        <p>
+          Uma criatura lendária que é sinônimo da Casa Targaryen. Os dragões são
+          incrivelmente poderosos e são utilizados como armas de guerra.
+        </p>
+        <button id="to-viserys-character">Voltar para Viserys</button>
+      </div>
+      <!-- RHAENYRA -->
+      <div class="grid-item" id="rhaenyra-card">
+        <img src="./images/rhaenyra.png" alt="Rhaenyra Targaryen" />
+        <h2 style="color: #690e0a">Rhaenyra Targaryen</h2>
+        <p>
+          Filha de Viserys I, ela é a herdeira nomeada ao Trono de Ferro. Uma
+          mulher forte e determinada, cujo direito ao trono é contestado,
+          resultando em uma luta feroz pelo poder.
+        </p>
+        <button id="to-rhaenyra-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="rhaenyra-dragon-card">
+        <img src="./images/dragon/Syrax.jpg" alt="Dragão" />
+        <h2>Syrax</h2>
+        <p>
+          O dragão montado por Rhaenyra Targaryen. Syrax é um dragão feroz e
+          leal que desempenha um papel importante na Dança dos Dragões.
+        </p>
+        <button id="to-rhaenyra-character">Voltar para Rhaenyra</button>
+      </div>
+      <!-- DAEMON -->
+      <div class="grid-item" id="daemon-card">
+        <img src="./images/daemon.jpg" alt="Daemon Targaryen" />
+        <h2 style="color: #690e0a">Daemon Targaryen</h2>
+        <p>
+          Irmão mais novo de Viserys, um guerreiro formidável e uma figura
+          carismática, mas também impulsiva e controversa. Ele tem suas próprias
+          ambições e desempenha um papel crucial na guerra civil.
+        </p>
+        <button id="to-daemon-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="daemon-dragon-card">
+        <img src="./images/dragon/Caraxes.jpg" alt="Dragão" />
+        <h2>Caraxes</h2>
+        <p>
+          O dragão montado por Daemon Targaryen. Caraxes é um dragão poderoso e
+          agressivo, conhecido como o "Wyrm de Sangue".
+        </p>
+        <button id="to-daemon-character">Voltar para Daemon</button>
+      </div>
+
+      <!-- JACAERYS -->
+      <div class="grid-item" id="jacaerys-card">
+        <img src="./images/Jacaerys.jpeg" alt="Jacaerys Velaryon" />
+        <h2 style="color: #690e0a">Jacaerys Velaryon</h2>
+        <p>
+          O filho mais velho e herdeiro da Princesa Rhaenyra Targaryen e Laenor
+          Velaryon,é um jovem corajoso e determinado, com um forte senso de
+          dever e lealdade à sua mãe e à Casa Targaryen. Ele é um cavaleiro
+          habilidoso e monta o dragão Vermax.
+        </p>
+        <button id="to-jacaerys-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="jacaerys-dragon-card">
+        <img src="./images/dragon/Vermax.png" alt="Dragão" />
+        <h2>Vermax</h2>
+        <p>
+          Dragão montado por Jacaerys Velaryon. Vermax é um jovem dragão, leal e
+          feroz em batalha.
+        </p>
+        <button id="to-jacaerys-character">Voltar para Jacaerys</button>
+      </div>
+      <!-- ALICENT -->
+      <div class="grid-item" id="alicent-card">
+        <img src="./images/alicent.jpeg" alt="Alicent Hightower" />
+        <h2 style="color: green">Alicent Hightower</h2>
+        <p>
+          Esposa do Rei Viserys I e mãe de seus filhos mais novos. Ela se torna
+          uma figura central no conflito, defendendo os direitos de seus filhos
+          ao trono.
+        </p>
+        <button class="btn-nd">Nao possui Dragao</button>
+      </div>
+
+      <!-- Otto  -->
+      <div class="grid-item">
+        <img src="./images/Otto.jpeg" alt="Otto Hightower" />
+        <h2 style="color: green">Otto Hightower</h2>
+        <p>
+          Pai de Alicent e Mão do Rei, um estrategista astuto que manipula os
+          eventos em favor de sua família.
+        </p>
+        <button class="btn-nd">Nao possui Dragao</button>
+      </div>
+
+      <!-- Aemond -->
+      <div class="grid-item" id="aemond-card">
+        <img src="./images/Aemond.jpeg" alt="Aemond Targaryen" />
+        <h2 style="color: #0a690c">Aemond</h2>
+        <p>
+          Príncipe Aemond Targaryen,era o filho mais novo do Rei Viserys I
+          Targaryen com a Rainha Alicent Hightower. Ele montava Vhagar, o último
+          dragão da época da Guerra da Conquista.
+        </p>
+        <button id="to-aemond-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="aemond-dragon-card">
+        <img src="./images/dragon/vhagar.jpeg" alt="Dragão" />
+        <h2>Vhagar</h2>
+        <p>
+          Dragão montado por Aemond Targaryen. Vhagar é um dos dragões mais
+          antigos e temidos, com uma longa história de batalhas.
+        </p>
+        <button id="to-aemond-character">Voltar para Aemond</button>
+      </div>
+      <!-- AEGON -->
+      <div class="grid-item" id="aegon-card">
+        <img src="./images/Aegon.jpeg" alt="Aegon II Targaryen" />
+        <h2 style="color: green">Aegon II Targaryen</h2>
+        <p>
+          Foi o filho e sucessor do Rei Viserys I com a Rainha Alicent
+          Hightower. Ele foi coroado após a morte do pai, que deixou ordens para
+          que sua filha mais velha, a Princesa Rhaenyra, herdasse o Trono de
+          Ferro. No entanto a Rainha Alicent colocou seu filho, o herdeiro
+          masculino, a frente, causando a guerra civil que ficou conhecida como
+          a Dança dos Dragões.
+        </p>
+        <button id="to-aegon-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="aegon-dragon-card">
+        <img src="./images/dragon/Sunfyre.jpg" alt="Dragão" />
+        <h2>Sunfyre</h2>
+        <p>
+          Dragão montado por Aegon II Targaryen, conhecido por suas escamas
+          douradas.
+        </p>
+        <button id="to-aegon-character">Voltar para Aegon</button>
+      </div>
+
+      <!-- CORLYS -->
+      <div class="grid-item">
+        <img src="./images/corlys.jpg" alt="Corlys Velaryon" />
+        <h2 style="color: #690e0a">Corlys Velaryon</h2>
+        <p>
+          Conhecido como "O Senhor das Marés", Corlys é um poderoso nobre de
+          Westeros, casado com Rhaenys Targaryen. Ele é um hábil navegador e
+          comerciante, conhecido por suas vastas explorações marítimas.
+        </p>
+        <button class="btn-nd">Nao possui Dragao</button>
+      </div>
+
+      <!-- RHAENYS -->
+      <div class="grid-item" id="rhaenys-card">
+        <img src="./images/rhaenys.jpg" alt="Rhaenys Targaryen" />
+        <h2 style="color: #690e0a">Rhaenys Targaryen</h2>
+        <p>
+          Conhecida como "A Rainha Que Nunca Foi", Rhaenys era a montadora do
+          dragão Meleys e esposa de Corlys Velaryon, Durante a Dança dos
+          Dragões, ela apoiou a reinvindicação da Princesa Rhaenyra Targaryen,
+          casando seus filhos com ela e Daemon.
+        </p>
+        <button id="to-rhaenys-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="rhaenys-dragon-card">
+        <img src="./images/dragon/meleys.jpg" alt="Dragão" />
+        <h2>Meleys</h2>
+        <p>
+          Conhecido como a "Rainha Vermelha", Meleys é um dos dragões mais
+          temidos e respeitados, montado por Rhaenys Targaryen.
+        </p>
+        <button id="to-rhaenys-character">Voltar para Rhaenys</button>
+      </div>
+
+      <!-- BAELA -->
+      <div class="grid-item" id="baela-card">
+        <img src="./images/Baela.jpeg" alt="Baela Targaryen" />
+        <h2 style="color: #690e0a">Baela</h2>
+        <p>
+          Baela é uma princesa Targaryen conhecida por sua beleza e coragem.
+          Durante a guerra civil conhecida como a Dança dos Dragões, Baela monta
+          o dragão Moondancer
+        </p>
+        <button id="to-baela-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="baela-dragon-card">
+        <img src="./images/dragon/Moondancer.png" alt="Dragão" />
+        <h2>Moondancer</h2>
+        <p>
+          Dragão montado por Baela Targaryen. Moondancer é um dragão ágil e
+          rápido, excelente em combate aéreo.
+        </p>
+        <button id="to-baela-character">Voltar para Baela</button>
+      </div>
+      <!-- LUCERYS -->
+      <div class="grid-item" id="joffrey-card">
+        <img src="./images/Lucerys_Velaryon.png" alt="Lucerys-Velaryon" />
+        <h2 style="color: #690e0a">Lucerys Velaryon</h2>
+        <p>
+          Joffrey é um dos filhos de uma das principais figuras da trama, com um
+          papel significativo na disputa pelo poder.
+        </p>
+        <button id="to-joffrey-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="joffrey-dragon-card">
+        <img src="./images/dragon/Arrax_Official_Guide.png" alt="Dragão" />
+        <h2>Arrax</h2>
+        <p>O dragão que Joffrey monta, conhecido por sua força e agilidade.</p>
+        <button id="to-joffrey-character">Voltar para Joffrey</button>
+      </div>
+      <!-- HUGH-->
+      <div class="grid-item" id="hugh-card">
+        <img src="./images/Hugh.webp" alt="Hugh" />
+        <h2>Hugh</h2>
+        <p>
+          Um personagem notável da série, Hugh é um cavaleiro que participa da
+          luta pelo poder, sendo leal a uma das facções principais.
+        </p>
+        <button id="to-hugh-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="hugh-dragon-card">
+        <img src="./images/dragon/Vermithor.png" alt="Dragão" />
+        <h2>Vermithor</h2>
+        <p>
+          O dragão associado a Hugh, conhecido por sua feroz habilidade em
+          combate.
+        </p>
+        <button id="to-hugh-character">Voltar para Hugh</button>
+      </div>
+
+      <!--  Ulf -->
+      <div class="grid-item" id="ulf-card">
+        <img src="./images/Ulf.png" alt="Ulf" />
+        <h2>Ulf</h2>
+        <p>
+          Ulf é um dos principais rivais na disputa pelo trono, conhecido por
+          sua estratégia e habilidade em batalha.
+        </p>
+        <button id="to-ulf-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="ulf-dragon-card">
+        <img src="./images/dragon/Silverwing.png" alt="Dragão" />
+        <h2>Silverwing</h2>
+        <p>
+          O dragão associado a Ulf, uma criatura formidável que é um ativo
+          valioso na luta pelo poder.
+        </p>
+        <button id="to-ulf-character">Voltar para Ulf</button>
+      </div>
+
+      <!-- Novo Personagem: Addam -->
+      <div class="grid-item" id="addam-card">
+        <img src="./images/Addam.jpeg" alt="Addam" />
+        <h2 style="color: #690e0a">Addam</h2>
+        <p>
+          Addam é uma figura importante na história, com um papel crucial na
+          configuração dos eventos políticos e militares.
+        </p>
+        <button id="to-addam-dragon">Ver Dragão</button>
+      </div>
+      <div class="grid-item hidden" id="addam-dragon-card">
+        <img src="./images/dragon/SeaSmoke.png" alt="Dragão" />
+        <h2>SeaSmoke</h2>
+        <p>O dragão que Addam monta, conhecido por sua bravura e lealdade.</p>
+        <button id="to-addam-character">Voltar para Addam</button>
+      </div>
+    </section>
+
+    <!-- Os melhores momentos  -->
+
+    <section class="episodes" id="episodes">
+      <div class="heading">
+        <span>Os melhores </span>
+        <h1>Momentos</h1>
+      </div>
+
+      <div class="container-episodes">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/0ASMFYwwfAg?si=pWXWd1pfFwv-5TLF"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/Joao-Marcoss" class="social-icon"
+          ><i class="fa fa-github fa-2x"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/jo%C3%A3o-marcos-b8b612245/"
+          class="social-icon"
+          ><i class="fa fa-linkedin fa-2x"></i
+        ></a>
+
+        <div class="row">
+          <p>Criado por João Marcos</p>
+          <p>
+            Este site não é oficial e não está afiliado à série "House of the
+            dragon" ou à emissora.
+          </p>
+          <p>Este site é apenas para fins de estudo e entretenimento.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
